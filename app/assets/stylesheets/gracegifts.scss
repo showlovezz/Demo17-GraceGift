@@ -61,6 +61,10 @@ ul {
 	}
 }
 
+section {
+	padding: 60px 0;
+}
+
 // 導覽列選單文字
 #navbarSupportedContent {
 	a.nav-link {
@@ -143,12 +147,11 @@ ul {
 
 // 輪播
 .banner_high {
-	height: 638.25px;
+	max-height: 638.25px;
 }
 
 // 服務區塊
 .service {
-	padding: 60px 0;
 	border-bottom: 1px solid $caribbean_green;
 }
 
@@ -167,5 +170,56 @@ ul {
 		> p {
 			margin-bottom: 0;
 		}
+	}
+}
+
+// 特色商品
+.section_title {
+	position: relative;
+	> h4 {
+		display: inline-block;
+    padding: 0 20px;
+    position: relative;
+    color: $dark_gray;
+    font-size: 24px;
+    font-weight: 600;
+	}
+	> h4::after {
+		background: rgba(0, 0, 0, 0) url("icon_title.png") no-repeat scroll center top;
+    bottom: -27px;
+    content: "";
+    height: 23px;
+    left: -75px;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    width: 283px;
+	}
+}
+
+.card-img-top {
+	max-height: 330.84px;
+}
+
+.featured {
+	.card-title {
+		font-size: 14px;
+		color: $dark_gray;
+		cursor: pointer;
+	}
+	.card-title:hover {
+		color: $caribbean_green;
+	}
+	.rating_icon {
+		> i {
+			font-size: 12px;
+		}
+	}
+}
+
+div {
+	> .new_price {
+		// font-size: 14px;
+		color: $dark_gray;
 	}
 }

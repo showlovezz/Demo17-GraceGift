@@ -1,3 +1,142 @@
 // Place all the styles related to the gracegifts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 共用
+a {
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+// 導覽列會員功能
+.header_area {
+	> .header_top {
+		border-bottom: 1px solid $light_gray;
+	}
+}
+
+.header_default {
+	color: $gray;
+	font-size: 14px;
+	line-height: 40px;
+	> p {
+		margin: 0;
+	}
+}
+
+.head_user_info {
+	padding: 10px 0;
+	text-align: right;
+}
+
+.head_user_info {
+	> a {
+		border-left: 1px solid $white_smoke;
+		color: $dark_gray;
+		font-size: 12px;
+		line-height: 20px;
+		padding-left: 14px;
+		margin-right: 10px;
+		> i {
+			margin-right: 1px;
+		}
+	}
+	> a:hover {
+		color: $caribbean_green;
+		text-decoration: none;
+	}
+}
+
+.header_logo {
+	padding: 10px 0;
+	> img {
+		height: 73px;
+		width: 215px;
+	}
+}
+
+// 導覽列選單文字
+#navbarSupportedContent {
+	a.nav-link {
+		padding: 0 20px;
+		font-size: 18px;
+	}
+}
+
+#navbarSupportedContent {
+	a:hover {
+		color: $caribbean_green;
+	}
+}
+
+@media (max-width: 767px) {
+	.header_bottom {
+		.navbar {
+			padding: 0;
+		}
+		#navbarSupportedContent {
+			background-color: $gainsboro;
+		}
+		.nav-item {
+			padding: 10px 0;
+		}
+		.header_bottom_right_inner {
+			padding-top: 15px;
+		}
+	}
+}
+
+.header_bottom_right_inner {
+	padding-top: 35px;
+	> li {
+		display: inline-block;
+		position: relative;
+		> a {
+			color: $gray;
+	    transition: all 0.3s ease 0s;
+		}
+		> a:hover {
+			color: $caribbean_green;
+		}
+	}
+}
+
+.cart_toggler {
+	> i {
+		border: 2px solid $dark_gray;
+    cursor: pointer;
+    height: 32px;
+    line-height: 27px;
+    text-align: center;
+    width: 32px;
+	}
+}
+
+.mini_cart_icon {
+	> i {
+		border: 2px solid $caribbean_green;
+    color: $caribbean_green;
+    font-size: 12px;
+	}
+	> span {
+		background: rgba(0, 0, 0, 0) url("icon_cart.png") no-repeat scroll left top;
+	  color: $white;
+	  display: block !important;
+	  font-size: 12px;
+	  font-weight: 500;
+	  height: 23px;
+	  line-height: 25px;
+	  position: absolute;
+	  right: -10px;
+	  text-align: center;
+	  text-shadow: 0 0 0;
+	  top: -10px;
+	  width: 20px;
+	}
+}
